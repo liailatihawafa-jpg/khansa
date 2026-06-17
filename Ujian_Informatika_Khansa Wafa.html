@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Biodata Saya</title>
+  <!-- Menghubungkan ke file CSS eksternal-->
+  <style>
+body {
+      background-color:#5d807d;
+      text-align:center;/*Membuat konten teks ke tengah*/
+      font-family:arial;
+     }
+
+     /*Mengatur kotak utama*/
+     .kotak{
+       background-color:#8a9cba;
+       width:300px;
+       margin:50px auto;/*Kotak ke tengah*/
+       padding:20px;
+       border:10px solid white;
+     }
+
+     /* Mengatur gambar profil*/
+     .foto{
+        width:100px;
+        height:100px;
+        border-radius:50%;/*Membuat gambar bulat*/
+     }
+
+     /*PERBAIKAN DAFTAR HOBI agar sejajar*/
+     ul{
+       display:inline-block;/*Membuat area daftar hanya selebar teksnya*/
+       text-align:left;  /*Membuat teks di dalam daftar rata kiri (sejajar titik)*/
+     }
+
+     /*Mengatur tombol*/
+     button{
+       background-color:#c7eaff;
+       padding:10px;
+       cursor:pointer;
+     }
+     button:hover{
+        background-color:#5e2e39;/*Wara sedikit gelap saat tombol disentuh mouse*/       
+  </style>
+</head>
+<body>
+
+  <div class="kotak">
+    <!--Foto-->
+             <img    src="https://cdn.phototourl.com/free/2026-05-13-c66b8116-a6aa-420a-9bab-21778baf41a8.jpg" class="foto">
+
+
+    <!--Teks-->
+    <h1>KHANSA WAFA LIA'ILATIHA</h1>
+    <p>saya siswa SMPIT nurul islam tengaran who are currently taking their practical exam.</p>
+    <hr>
+    <!--Daftar-->
+    <h3>Hobi:</h3>
+    <ul>
+      <li>membaca</li>
+      <li>memasak</li>
+      <li>medengarkan musik</li>
+    </ul>
+
+    <!--Link-->
+    <p><a href="https://khansawafa.wordpress.com/2026/05/13/komentar-negatif-toleransi-di-media-sosial/">Lihat Website</a></p>
+    
+    <!--Tombol Interaksi-->
+    <button onclick="kliksapa()">Klik Saya</button>
+    <p id="hasil"></p>
+   </div>
+   <!--Menghubungkan ke file JavaScript eksternal-->
+   <script>
+function kliksapa(){
+       document.getElementById("hasil").innerHTML="You don't have to be great to start, but you have to start to be great";
+     }
+   </script>
+</body>
+</html>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
